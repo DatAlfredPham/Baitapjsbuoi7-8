@@ -14,175 +14,228 @@
 
 </head>
 
+
+
 <body>
 
-
-
-    <!-- FUNCTION1  -->
-
-    <div class="d-flex justify-content-center py-5">
+    <div class="d-flex justify-content-center my-5">
         <div class="card w-50">
-            <div class="card-header text-center" style="background-color: #C61063; color: white;">TỔNG CÁC SỐ DƯƠNG TRONG MẢNG
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">Nhập số
             </div>
             <div class="body">
-                <div class="form-group pt-3">
-                    <input type="number" class="form-control form__input" id="inputScore0" placeholder="Điểm chuẩn">
-                </div>
-                <div class="form-group">
 
-                    <select class="form-control form__input" name="" id="inputArea">
-                        <option value="0">Chọn khu vực</option>
-                        <option value="2">A</option>
-                        <option value="1">B</option>
-                        <option value="0.5">C</option>
-                    </select>
-                </div>
-                <div class="form-group">
+                <input type="number" class="form-control form__input my-3" id="inputNum" placeholder="Nhập số n">
 
-                    <select class="form-control form__input" name="" id="inputObject">
-                        <option value="0">Chọn đối tượng</option>
-                        <option value="2.5">1</option>
-                        <option value="1.5">2</option>
-                        <option value="1">3</option>
-                    </select>
-                </div>
-                <div class="form-group">
+                <button class="btn btn-primary me-1 mb-1" type="button" onclick="addNumber()">Thêm số</button>
 
-                    <input type="number" class="form-control form__input" id="inputScore1"
-                        placeholder="Điểm môn thứ nhất">
-                </div>
-                <div class="form-group">
-
-                    <input type="number" class="form-control form__input" id="inputScore2"
-                        placeholder="Điểm môn thứ hai">
-                </div>
-                <div class="form-group">
-
-                    <input type="number" class="form-control form__input" id="inputScore3"
-                        placeholder="Điểm môn thứ ba">
+                <div class="alert alert-success my-3 py-3" role="alert">
+                    <span id="txtArray"></span>
                 </div>
 
+            </div>
+        </div>
 
-                <button type="button" class="btn btn-primary" id="btnResult">Kết quả</button>
-                <p class="alert alert-info mt-3 py-3" id="txtNotify1"></p>
+    </div>
+
+
+    <!-- EXERCISE1  -->
+    <div class="d-flex justify-content-center my-5">
+        <div class="card w-50">
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">1. TỔNG SỐ DƯƠNG
+            </div>
+            <div class="body">
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="totalPositive()">Tính tổng</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtTotalPositive"></span>
+                </div>
 
             </div>
         </div>
     </div>
 
 
-
-
-    <!-- FUNCTION2  -->
-
-    <div class="d-flex justify-content-center py-5">
+    <!-- EXERCISE2  -->
+    <div class="d-flex justify-content-center my-5">
         <div class="card w-50">
-            <div class="card-header text-center" style="background-color: #f50057; color: white;">ĐẾM CÓ BAO NHIÊU SỐ DƯƠNG TRONG MẢNG
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">2. ĐẾM SỐ DƯƠNG
             </div>
             <div class="body">
-                <div class="form-group pt-3">
-                    <input type="text" class="form-control" id="inputName" placeholder="Nhập họ tên">
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="countPositive()">Đếm số</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtCountPositive"></span>
                 </div>
-
-                <div class="form-group">
-                    <input type="number" class="form-control" id="inputKw" placeholder="Nhập số kw">
-                </div>
-
-
-
-                <button type="button" class="btn btn-primary" id="btnCalcKW">Tính tiền điện</button>
-
-
-                <p class="alert alert-info mt-3 py-3" id="txtNotify2"></p>
-
 
             </div>
         </div>
     </div>
 
 
-
-
-    <!-- FUNCTION3  -->
-
-    <div class="d-flex justify-content-center py-5">
+    <!-- EXERCISE3  -->
+    <div class="d-flex justify-content-center my-5">
         <div class="card w-50">
-            <div class="card-header text-center" style="background-color: #ff4081; color: white;">TÌM SỐ NHỎ NHẤT TRONG MẢNG</div>
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">3. TÌM SỐ NHỎ NHẤT
+            </div>
             <div class="body">
-                <div class="form-group pt-3">
-                    <input type="text" class="form-control" id="inputName3" placeholder="Nhập họ tên">
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="findMinNumber()">Tìm số nhỏ
+                    nhất</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtMinNumber"></span>
                 </div>
-                <div class="form-group">
-                    <input type="number" class="form-control" id="inputSalary" placeholder="Tổng thu nhập năm">
-                </div>
-                <div class="form-group">
-                    <input type="number" class="form-control" id="inputPerson" placeholder="Số người phụ thuộc">
-                </div>
-
-
-                <button type="button" class="btn btn-primary" id="btnCalcTax">Tính tiền thuế</button>
-
-                <p class="alert alert-info mt-3 py-3" id="txtNotify3"></p>
-
-
 
             </div>
         </div>
     </div>
 
 
-
-    <!-- FUNCTION4  -->
-
-    <div class="d-flex justify-content-center py-5">
+    <!-- EXERCISE4  -->
+    <div class="d-flex justify-content-center my-5">
         <div class="card w-50">
-            <div class="card-header text-center" style="background-color: #FF80AB; color: white;">TÌM SỐ DƯƠNG NHỎ NHẤT TRONG MẢNG</div>
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">4. TÌM SỐ DƯƠNG NHỎ
+                NHẤT
+            </div>
             <div class="body">
-                <div class="form-group pt-3">
-                    <select class="form-control form__input" id="selectCustomer" onchange="disableNumConnect()">
-                        <option value="">Chọn loại khách hàng</option>
-                        <option value="people">Nhà Dân</option>
-                        <option value="company">Doanh Nghiệp</option>
-                    </select>
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="findMinPositive()">Tìm số dương nhỏ
+                    nhất</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtMinPositive"></span>
                 </div>
-
-                <div class="form-group pt-3">
-                    <input type="text" class="form-control form__input" id="customerID"
-                        placeholder="Nhập mã khách hàng">
-                </div>
-
-                <div class="form-group pt-3">
-                    <input type="number" class="form-control form__input" id="premiumChannel"
-                        placeholder="Số kênh cao cấp">
-                </div>
-
-                <div class="form-group pt-3">
-                    <input type="number" style="display: none;" class="form-control form__input" id="numConnect"
-                        placeholder="Số kết nối">
-                </div>
-
-
-                <button type="button" class="btn btn-primary" id="btnCalcCable">Tính tiền cáp</button>
-
-                <p class="alert alert-info mt-3 py-3" id="txtNotify4"></p>
 
             </div>
         </div>
     </div>
 
-    <!-- FUNCTION5  -->
 
-    <!-- FUNCTION6  -->
+    <!-- EXERCISE5  -->
+    <div class="d-flex justify-content-center my-5">
+        <div class="card w-50">
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">5. TÌM SỐ CHẴN CUỐI
+                CÙNG
+            </div>
+            <div class="body">
 
-    <!-- FUNCTION7  -->
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="findLastEvenNumber()">Tìm số chẵn cuối
+                    cùng</button>
 
-    <!-- FUNCTION8  -->
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtEven"></span>
+                </div>
 
-    <!-- FUNCTION9  -->
+            </div>
+        </div>
+    </div>
 
 
+    <!-- EXERCISE6  -->
+    <div class="d-flex justify-content-center my-5">
+        <div class="card w-50">
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">6. ĐỔI CHỖ
+            </div>
+            <div class="body">
 
-    <!-- FUNCTION10  -->
+                <input type="number" class="form-control form__input my-3" id="inputIndex1"
+                    placeholder="Nhập số vị trí 1">
+
+                <input type="number" class="form-control form__input" id="inputIndex2" placeholder="Nhập số vị trí 2">
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="changePosition()">Đổi chỗ</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtChangePosition"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EXERCISE7  -->
+    <div class="d-flex justify-content-center my-5">
+        <div class="card w-50">
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">7. SẮP XẾP TĂNG DẦN
+            </div>
+            <div class="body">
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="sortUpAscending()">Sắp xếp</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtSortUpAscending"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EXERCISE8  -->
+    <div class="d-flex justify-content-center my-5">
+        <div class="card w-50">
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">8. TÌM SỐ NGUYÊN TỐ
+                ĐẦU TIÊN
+            </div>
+            <div class="body">
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="findFirstPrime()">Tìm số nguyên tố đầu tiên</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtFirstPrime"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EXERCISE9  -->
+    <div class="d-flex justify-content-center my-5">
+        <div class="card w-50">
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">9. ĐẾM SỐ NGUYÊN
+            </div>
+            <div class="body">
+                <input type="number" class="form-control form__input my-3" id="inputFloat" placeholder="Nhập số">
+
+                <button class="btn btn-primary me-1 mb-1 mb-3" type="button" onclick="addFloatNumber()">Thêm
+                    số</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtnumArrayFloat"></span>
+                </div>
+
+                <button class="btn btn-primary me-1 mb-3" type="button" onclick="countInteger()">Đếm số nguyên</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtCountInteger"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EXERCISE10  -->
+    <div class="d-flex justify-content-center my-5">
+        <div class="card w-50">
+            <div class="card-header text-center" style="background-color: #f50057; color: white;">10. SO SÁNH SỐ LƯỢNG SỐ ÂM VÀ DƯƠNG
+            </div>
+            <div class="body">
+
+                <button class="btn btn-primary me-1 mb-1 my-3" type="button" onclick="comparePosAndNeg()">So sánh</button>
+
+                <div class="alert alert-success py-3" role="alert">
+                    <span id="txtComparePosAndNeg"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -192,8 +245,9 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 
-
     <script src="./js/main.js"></script>
 </body>
 
 </html>
+
+
